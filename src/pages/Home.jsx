@@ -7,7 +7,10 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    setUser(true);
+    setUser({
+      name: "Test",
+      email: "Test@gmail.com",
+    });
     navigate("/dashboard");
   };
   return (
